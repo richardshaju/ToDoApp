@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #020631;
+  background-color: #bdbdbd;
 }
 
 .app {
@@ -14,14 +14,18 @@ body {
   transform: translate(-50%, -10%);
 padding-top: 8rem;
 }
-
+.name{
+  color: black;
+  font-family: monospace;
+  font-size: 3rem;
+}
 .app .mainHeading h1 {
   text-align: center;
 }
 
 .app h1,
 h2 {
-  color: white;
+  color: #640000;
 }
 
 .app .input {
@@ -34,7 +38,7 @@ h2 {
   margin-top: 0.8em;
   width: 20em;
   height: 2em;
-  background-color: white;
+  background-color: #ffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,29 +65,85 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #2700ff;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  min-height: 3rem;
+  color: #fff;
+  width: 22rem;
+  
+}
+.app .done-todos .todo {
+  margin-top: 0.8em;
+  width: 20em;
+  min-height: 3rem;
+  background-color: #a1a1a1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  padding: 9px;
+  word-break: break-word;
+  margin-bottom: 0.5rem;
+  background-color: #afafafc4;
+}
+.app .done-todos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0cc100;
+  margin-top: 2rem; 
+  min-height: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 22rem;
 }
 .app .todos .todo {
   margin-top: 0.8em;
   width: 20em;
-  height: 2em;
+  min-height: 3rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   border-radius: 6px;
   padding: 5px;
+  word-break: break-word;
+  margin-bottom: 0.5rem; 
+  background-color: #afafafc4;
 }
 .app .todos .todo .left {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
+.app .done-todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .app .todos .todo .left p {
   margin-left: 3px;
   font-size: medium;
   font-weight: 700;
   font-style: normal;
-  color: grey;
+  color: rgb(0, 0, 0);
 }
-
+.app .done-todos .todo .left p {
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  
+  height: 1rem;
+  /* width: 7em; */
+  /* padding-top: 30px; */
+  align-self: self-end;
+}
